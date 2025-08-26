@@ -38,3 +38,8 @@ if so both, we declare that the client was succesfully attacked.
 #### Confirm with Network Flows: Search network_flows.csv for the client_ip from step 1 acting as a source_ip and communicating with the C2 server IP from step 2. Look for beaconing behavior (regular time intervals) or data exfiltration(3389 or 445).
 
 After that we can use host_info.csv to understand the role of the compromised host and assess the severity of the threat.
+
+#### Edge cases
+If we were to filter out the domains who were being connected to only once, it was possible to filter out a possible malicious site that got connected on the first try. So we have attched a ipynb nb to show that no such cases were there>
+
+
